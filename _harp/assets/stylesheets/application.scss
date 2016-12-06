@@ -96,31 +96,6 @@ hr{
   margin: 0.5em 0em 3em 2em;
 }
 
-.filter{
-    margin: 2em;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-}
-
-.filter li{
-    display: inline-block;
-    margin: 0.3em;
-}
-
-.filter li a{
-    display: block;
-    color: lightgrey;
-    padding: 8px 18px;
-    border: 2px solid #67d5b5;
-}
-
-.filter li a:hover,
-.filter .active a{
-    background-color: #67d5b5;
-    color: white;
-    border: 2px solid lightgrey;
-}
 
 #contact{
   padding-left: 3%;
@@ -135,40 +110,34 @@ button{
 }
 
 
-@media (min-width: 768px){
-    .isotope .isotope-item{
-        width: 50%;
-    }
-    .isotope .isotope-item.w2{
-        width: 100%;
-    }
-    .isotope.col-3 .isotope-item{
-        width: 50%;
-    }
-
-
-@media (min-width: 992px){
-    .isotope .isotope-item{
-        width: 33%;
-    }
-    .isotope .isotope-item.w2{
-        width: 66%;
-    }
-    .isotope.col-2 .isotope-item{
-        width: 50%;
-    }
+#photos {
+  line-height: 0;
+  column-count:         5;
+  column-gap:           0px;
 }
 
+#photos img {
+  width: 100%;
+  height: auto;
+}
 
-@media (min-width: 1200px){
-    .isotope .isotope-item{
-        width: 25%;
-    }
-    .isotope .isotope-item.w2{
-        width: 50%;
-    }
-    .isotope.col-3 .isotope-item{
-        width: 33%;
-    }
+@media (max-width: 1200px) {
+  #photos {
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  column-count:         1;
   }
 }
